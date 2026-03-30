@@ -1,0 +1,296 @@
+2026-03-31 00:25:30,741 ERROR analysis_failed latency_ms=49 error=URL can't contain control characters. '/v1beta/models/gemini-1.5-flash:generateContent?key=GEMINI_API_KEY = "AIzaSy...BURAYA_KENDI_ANAHTARINI_YAPISTIR"' (found at least ' ')
+Traceback (most recent call last):
+  File "C:\Users\Alara YAVUZ\OneDrive\Desktop\PRD.md\app.py", line 200, in <module>
+    result = _gemini_analyze_image(
+        image_bytes=image_bytes,
+    ...<2 lines>...
+        api_key=api_key,
+    )
+  File "C:\Users\Alara YAVUZ\OneDrive\Desktop\PRD.md\app.py", line 69, in _gemini_analyze_image
+    with urllib.request.urlopen(req, timeout=90) as resp:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 487, in open
+    response = self._open(req, data)
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 504, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 1369, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 1321, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              encode_chunked=req.has_header('Transfer-encoding'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\http\client.py", line 1358, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\http\client.py", line 1369, in _send_request
+    self.putrequest(method, url, **skips)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\http\client.py", line 1203, in putrequest
+    self._validate_path(url)
+    ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\http\client.py", line 1303, in _validate_path
+    raise InvalidURL(f"URL can't contain control characters. {url!r} "
+                     f"(found at least {match.group()!r})")
+http.client.InvalidURL: URL can't contain control characters. '/v1beta/models/gemini-1.5-flash:generateContent?key=GEMINI_API_KEY = "AIzaSy...BURAYA_KENDI_ANAHTARINI_YAPISTIR"' (found at least ' ')
+2026-03-31 00:26:47,712 ERROR analysis_failed latency_ms=2 error=URL can't contain control characters. '/v1beta/models/gemini-1.5-flash:generateContent?key=GEMINI_API_KEY = "AIzaSy...BURAYA_KENDI_ANAHTARINI_YAPISTIR"' (found at least ' ')
+Traceback (most recent call last):
+  File "C:\Users\Alara YAVUZ\OneDrive\Desktop\PRD.md\app.py", line 200, in <module>
+    result = _gemini_analyze_image(
+        image_bytes=image_bytes,
+    ...<2 lines>...
+        api_key=api_key,
+    )
+  File "C:\Users\Alara YAVUZ\OneDrive\Desktop\PRD.md\app.py", line 69, in _gemini_analyze_image
+    with urllib.request.urlopen(req, timeout=90) as resp:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 487, in open
+    response = self._open(req, data)
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 504, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 1369, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 1321, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              encode_chunked=req.has_header('Transfer-encoding'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\http\client.py", line 1358, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\http\client.py", line 1369, in _send_request
+    self.putrequest(method, url, **skips)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\http\client.py", line 1203, in putrequest
+    self._validate_path(url)
+    ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\http\client.py", line 1303, in _validate_path
+    raise InvalidURL(f"URL can't contain control characters. {url!r} "
+                     f"(found at least {match.group()!r})")
+http.client.InvalidURL: URL can't contain control characters. '/v1beta/models/gemini-1.5-flash:generateContent?key=GEMINI_API_KEY = "AIzaSy...BURAYA_KENDI_ANAHTARINI_YAPISTIR"' (found at least ' ')
+2026-03-31 00:29:25,010 ERROR analysis_failed latency_ms=377 error=Gemini API HTTP hata: 404. Detay: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+Traceback (most recent call last):
+  File "C:\Users\Alara YAVUZ\OneDrive\Desktop\PRD.md\app.py", line 69, in _gemini_analyze_image
+    with urllib.request.urlopen(req, timeout=90) as resp:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 493, in open
+    response = meth(req, response)
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 602, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Alara YAVUZ\OneDrive\Desktop\PRD.md\app.py", line 200, in <module>
+    result = _gemini_analyze_image(
+        image_bytes=image_bytes,
+    ...<2 lines>...
+        api_key=api_key,
+    )
+  File "C:\Users\Alara YAVUZ\OneDrive\Desktop\PRD.md\app.py", line 77, in _gemini_analyze_image
+    raise RuntimeError(f"Gemini API HTTP hata: {e.code}. Detay: {body}") from e
+RuntimeError: Gemini API HTTP hata: 404. Detay: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2026-03-31 00:31:41,327 ERROR analysis_failed latency_ms=323 error=Gemini API HTTP hata: 404. Detay: 
+Traceback (most recent call last):
+  File "C:\Users\Alara YAVUZ\OneDrive\Desktop\PRD.md\app.py", line 69, in _gemini_analyze_image
+    with urllib.request.urlopen(req, timeout=90) as resp:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 493, in open
+    response = meth(req, response)
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 602, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Alara YAVUZ\OneDrive\Desktop\PRD.md\app.py", line 200, in <module>
+    result = _gemini_analyze_image(
+        image_bytes=image_bytes,
+    ...<2 lines>...
+        api_key=api_key,
+    )
+  File "C:\Users\Alara YAVUZ\OneDrive\Desktop\PRD.md\app.py", line 77, in _gemini_analyze_image
+    raise RuntimeError(f"Gemini API HTTP hata: {e.code}. Detay: {body}") from e
+RuntimeError: Gemini API HTTP hata: 404. Detay: 
+2026-03-31 00:33:05,516 ERROR analysis_failed latency_ms=312 error=Gemini API HTTP hata: 404. Detay: 
+Traceback (most recent call last):
+  File "C:\Users\Alara YAVUZ\OneDrive\Desktop\PRD.md\app.py", line 69, in _gemini_analyze_image
+    with urllib.request.urlopen(req, timeout=90) as resp:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 493, in open
+    response = meth(req, response)
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 602, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Alara YAVUZ\OneDrive\Desktop\PRD.md\app.py", line 200, in <module>
+    result = _gemini_analyze_image(
+        image_bytes=image_bytes,
+    ...<2 lines>...
+        api_key=api_key,
+    )
+  File "C:\Users\Alara YAVUZ\OneDrive\Desktop\PRD.md\app.py", line 77, in _gemini_analyze_image
+    raise RuntimeError(f"Gemini API HTTP hata: {e.code}. Detay: {body}") from e
+RuntimeError: Gemini API HTTP hata: 404. Detay: 
+2026-03-31 00:33:19,760 ERROR analysis_failed latency_ms=369 error=Gemini API HTTP hata: 404. Detay: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-pro-vision is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+Traceback (most recent call last):
+  File "C:\Users\Alara YAVUZ\OneDrive\Desktop\PRD.md\app.py", line 69, in _gemini_analyze_image
+    with urllib.request.urlopen(req, timeout=90) as resp:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 493, in open
+    response = meth(req, response)
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 602, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Alara YAVUZ\OneDrive\Desktop\PRD.md\app.py", line 200, in <module>
+    result = _gemini_analyze_image(
+        image_bytes=image_bytes,
+    ...<2 lines>...
+        api_key=api_key,
+    )
+  File "C:\Users\Alara YAVUZ\OneDrive\Desktop\PRD.md\app.py", line 77, in _gemini_analyze_image
+    raise RuntimeError(f"Gemini API HTTP hata: {e.code}. Detay: {body}") from e
+RuntimeError: Gemini API HTTP hata: 404. Detay: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-pro-vision is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2026-03-31 00:33:51,186 ERROR analysis_failed latency_ms=332 error=Gemini API HTTP hata: 404. Detay: 
+Traceback (most recent call last):
+  File "C:\Users\Alara YAVUZ\OneDrive\Desktop\PRD.md\app.py", line 69, in _gemini_analyze_image
+    with urllib.request.urlopen(req, timeout=90) as resp:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 493, in open
+    response = meth(req, response)
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 602, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Users\Alara YAVUZ\AppData\Local\Python\pythoncore-3.14-64\Lib\urllib\request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Alara YAVUZ\OneDrive\Desktop\PRD.md\app.py", line 200, in <module>
+    result = _gemini_analyze_image(
+        image_bytes=image_bytes,
+    ...<2 lines>...
+        api_key=api_key,
+    )
+  File "C:\Users\Alara YAVUZ\OneDrive\Desktop\PRD.md\app.py", line 77, in _gemini_analyze_image
+    raise RuntimeError(f"Gemini API HTTP hata: {e.code}. Detay: {body}") from e
+RuntimeError: Gemini API HTTP hata: 404. Detay: 
+2026-03-31 00:39:43,937 INFO analysis_success latency_ms=5947 ts=2026-03-30 21:39:43Z
+2026-03-31 00:55:06,970 INFO analysis_success latency_ms=5987 ts=2026-03-30 21:55:06Z
+2026-03-31 00:57:58,976 INFO analysis_success latency_ms=4541 ts=2026-03-30 21:57:58Z
+2026-03-31 00:59:43,284 INFO analysis_success latency_ms=4583 ts=2026-03-30 21:59:43Z
+2026-03-31 01:01:48,548 INFO analysis_success latency_ms=5333 ts=2026-03-30 22:01:48Z
+2026-03-31 01:02:59,363 INFO analysis_success latency_ms=6975 ts=2026-03-30 22:02:59Z
+2026-03-31 01:07:00,380 INFO analysis_success latency_ms=4907 ts=2026-03-30 22:07:00Z
+2026-03-31 01:09:37,983 INFO analysis_success latency_ms=4887 ts=2026-03-30 22:09:37Z
+2026-03-31 01:34:29,996 INFO analysis_success latency_ms=4635 ts=2026-03-30 22:34:29Z
+2026-03-31 01:34:42,447 INFO analysis_success latency_ms=4612 ts=2026-03-30 22:34:42Z
+2026-03-31 01:36:14,489 INFO analysis_success latency_ms=7097 ts=2026-03-30 22:36:14Z
+2026-03-31 01:38:28,438 INFO analysis_success latency_ms=12013 ts=2026-03-30 22:38:28Z
