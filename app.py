@@ -85,6 +85,7 @@ prompt_default = (
     "Nesneleri sadece şekil olarak değil, işlevleriyle birlikte tanımla (Örn: Bu bir hesap makinesi). "
     "Eğer üzerinde yazı veya rakam varsa onları oku. "
     "Kullanıcının elinde ne tuttuğunu ve nesnenin özelliklerini detaylıca Türkçe anlat."
+    "LÜTFEN CEVABINDA TÜRKÇE KARAKTERLER (ı, ş, ğ, ü, ö, ç) KULLANMAMAYA ÇALIŞ, İNGİLİZCE KARAKTERLERLE TÜRKÇE YAZ."
 )
 
 prompt = st.text_area("Analiz talimatı (Türkçe)", value=prompt_default, height=120)
@@ -157,7 +158,9 @@ if image_file is not None:
                     elapsed_ms,
                     type(e).__name__,
                 )
-                st.error(f"Analiz başarısız: {_redact_secrets(str(e))}")
+                error_msg = _redact_secrets(str(e))
+                st.error("Analiz sırasında bir hata oluştu.")
+                st.write(error_msg.encode('ascii', 'ignore').decode('ascii'))
 else:
     st.session_state.setdefault("last_result", "")
     st.session_state.setdefault("last_latency_ms", None)
